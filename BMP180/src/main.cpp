@@ -14,7 +14,7 @@ Adafruit_BMP085_Unified bmp;
 const char *ssid = "Long&Le";
 const char *password = "03062002";
 
-unsigned myChannelNumber = 2;
+unsigned myChannelNumber = 1;
 const char* myWriteAPIKey= "108ZJH0CAAHJJG3R";
 
 void setup() {
