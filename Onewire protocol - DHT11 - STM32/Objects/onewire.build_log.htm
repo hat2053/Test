@@ -21,8 +21,8 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
 Dialog DLL:      TCM.DLL V1.46.0.0
  
 <h2>Project:</h2>
-D:\Code\STM-onewire\1day\onewire.uvprojx
-Project File Date:  03/06/2025
+D:\Code\Onewire protocol - DHT11 - STM32\Onewire protocol - DHT11 - STM32\onewire.uvprojx
+Project File Date:  03/13/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.14', folder: 'D:\KeilC\Keil\ARM\ARMCLANG\Bin'
@@ -54,28 +54,28 @@ main.c(20): note: declare 'static' if the function is not intended to be used ou
 void USART_InitConfig(void) {
 ^
 static 
-main.c(48): warning: no previous prototype for function 'USART_SendText' [-Wmissing-prototypes]
+main.c(46): warning: no previous prototype for function 'USART_SendText' [-Wmissing-prototypes]
 void USART_SendText(char *text) {
      ^
-main.c(48): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(46): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void USART_SendText(char *text) {
 ^
 static 
-main.c(58): warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+main.c(56): warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
     sprintf(buffer, "%d", value);
     ^
-main.c(58): note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
-main.c(56): warning: no previous prototype for function 'USART_SendValue' [-Wmissing-prototypes]
+main.c(56): note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+main.c(54): warning: no previous prototype for function 'USART_SendValue' [-Wmissing-prototypes]
 void USART_SendValue(uint8_t value) {
      ^
-main.c(56): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(54): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void USART_SendValue(uint8_t value) {
 ^
 static 
-main.c(62): warning: no previous prototype for function 'DHT11_Init' [-Wmissing-prototypes]
+main.c(60): warning: no previous prototype for function 'DHT11_Init' [-Wmissing-prototypes]
 void DHT11_Init(void) {
      ^
-main.c(62): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(60): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void DHT11_Init(void) {
 ^
 static 
@@ -85,10 +85,10 @@ D:/KeilC/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning
 D:/KeilC/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_tim.h(50): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
 typedef struct
         ^
-main.c(72): warning: no previous prototype for function 'Timer_Init' [-Wmissing-prototypes]
+main.c(70): warning: no previous prototype for function 'Timer_Init' [-Wmissing-prototypes]
 void Timer_Init(void) {
      ^
-main.c(72): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(70): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void Timer_Init(void) {
 ^
 static 
@@ -125,7 +125,7 @@ unsigned int loopIndex, bitIndex;
 15 warnings generated.
 compiling main.c...
 linking...
-Program Size: Code=2880 RO-data=272 RW-data=0 ZI-data=1656  
+Program Size: Code=2888 RO-data=272 RW-data=0 ZI-data=1656  
 ".\Objects\onewire.axf" - 0 Error(s), 15 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -159,34 +159,34 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:6.1.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
       Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
       Source file:   Device\Source\system_stm32f10x.c
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
 
    * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
       Include file:  Device\StdPeriph_Driver\inc\misc.h
-      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
-      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
       Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
       Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
 
    * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
 
    * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
 
    * Component: Keil::Device:StdPeriph Drivers:TIM:3.6.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
 
    * Component: Keil::Device:StdPeriph Drivers:USART:3.6.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
-Build Time Elapsed:  00:00:01
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
